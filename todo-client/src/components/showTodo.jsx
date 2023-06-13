@@ -11,7 +11,7 @@ const ShowTodoList = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api/todo")
+      .get("https://todo-backend-nrbc.onrender.com/api/todo")
       .then((response) => {
         setTodo(response.data);
       })

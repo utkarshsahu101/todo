@@ -11,7 +11,10 @@ connectDB();
 const todo = require("./routers/todo");
 
 // cors
-app.use(cors({ origin: true, credentials: true }));
+// app.use(cors({ origin: true, credentials: true }));
+app.use(
+  cors({ origin: "https://todo-frontend-x152.onrender.com", credentials: true })
+);
 
 // initialize middleware
 app.use(express.json({ extended: false }));
