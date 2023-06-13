@@ -19,7 +19,7 @@ const CreateTodo = () => {
     console.log(todo);
 
     axios
-      .post("http://localhost:8000/api/todo", data)
+      .post("https://todo-backend-nrbc.onrender.com/api/todo", data)
       .then((res) => {
         setData({ title: "", description: "" });
         console.log(res.data.message);

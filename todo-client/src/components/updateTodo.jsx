@@ -14,7 +14,7 @@ const UpdateTodo = ({ _id, handleClose, handleUpdate }) => {
 
     // console.log();
     axios
-      .put(`http://localhost:8000/api/todo/${_id}`, data)
+      .put(`https://todo-backend-nrbc.onrender.com/api/todo/${_id}`, data)
       .then((response) => {
         setData({ title: "", description: "" });
         console.log(response);

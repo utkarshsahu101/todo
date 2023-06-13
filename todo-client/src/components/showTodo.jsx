@@ -31,7 +31,7 @@ const ShowTodoList = () => {
   }
 
   function handleDelete(e) {
-    axios.delete(`http://localhost:8000/api/todo/${e.target.name}`);
+    axios.delete(`https://todo-backend-nrbc.onrender.com/api/todo/${e.target.name}`);
 
     setTodo((data) => {
       return data.filter((todo) => todo._id !== e.target.name);
