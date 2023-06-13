@@ -1,0 +1,16 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-server": "cd todo-app && npm install",
+    "start-server": "cd todo-app && node server.js",
+    "install-client": "cd todo-client && npm install",
+    "build-client": "cd todo-client && npm run build",
+    "start-client": "cd todo-client && npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
